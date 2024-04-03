@@ -1,0 +1,84 @@
+.bck-color{
+  background-color: #263238;
+}
+main{
+  min-height: 120vh;
+  width: 100%;
+  background-color: #263238;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#DOM-div{
+  overflow: scroll;
+}
+/* Div the React elements are wrapped into */
+#React-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* Div with button and textarea editor */
+#editor-div{
+  /* For the textarea(#editor) position:absolute */
+  /* position: relative; */
+  top: 0;
+  width: 70%;
+  min-height: 220px;
+  background-color: #2E7D32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.expand-icon, .minimize-icon{
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.expand-icon:hover, .minimize-icon:hover {
+  cursor: pointer;
+}
+#editor-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 17px;
+  height: 20px;
+  position: absolute;
+  top: -3px;
+  left: 10%;
+}
+#preview-title {
+  font-family: Montserrat, sans-serif;
+  padding-left: 20%;
+}
+#editor-title-icon, #preview-title-icon{
+  height: 20px;
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+/* Textarea */
+#editor{
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  position: absolute;
+  top: 20px; /* Leave room for icon */
+}
+
+#preview{
+  width: 100%;
+  overflow: scroll;
+  background-color: #fff;
+}
+#preview-div{
+  width: 80vw;
+  background-color: #2E7D32;
+  border: 1px solid black;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 10px;
+  /* gets height from react */
+}
